@@ -7,8 +7,8 @@
         }
     },
     "variables": {
-        "adminUsername": "LabAdmin",
-        "adminPassword": "LabPassword!",
+        "adminUsername": "WorkshopAdmin",
+        "adminPassword": "WorkshopPassword!",
         "virtualMachineName": "[concat('Workshop',parameters('yourName'))]",
         "virtualNetworkName": "[concat(variables('virtualMachineName'),'-VNET')]",
         "publicIpAddressName": "[concat(variables('virtualMachineName'),'-PIP')]",
