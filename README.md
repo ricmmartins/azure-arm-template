@@ -34,5 +34,13 @@ az group deployment create --resource-group <resourcegroupname> --template-file 
 
 > Note: In the sample, I'm using the Brazil South location, feel free to use another region. Change "resourcegroupname" by the name of resource group that you want. When edit the file azuredeploy.parameters.json, you need choose an VmDNSName (must be unique), adminUsername, adminPassword and mySqlPasword. 
 
+## ELKStack
+### This lab will deply the ELK Stack among 3 VMs, using Redis Service as parsing and a VM working as Application Server generating logs.
+#### Instructions:
 
+1. Install [az-cli](https://docs.microsoft.com/en-us/cli/azure/) or use the [cloud shell](https://azure.microsoft.com/en-us/features/cloud-shell/)
+
+2. Run the script [ELKStack.sh](https://github.com/ricmmartins/azure-arm-template/blob/master/ELKStack.sh)
+
+> Note: Details about this lab at [http://ricardomartins.com.br/implementando-a-stack-elk-no-azure-via-cli/](http://ricardomartins.com.br/implementando-a-stack-elk-no-azure-via-cli/)
 
