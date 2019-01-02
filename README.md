@@ -14,19 +14,25 @@ This repo will host ARM Templates used for Labs and Demonstrations.
 ### This lab will deploy a Ubuntu VM from CLI whith wordpress installed.
 #### Instructions:
 
-Install [az-cli](https://docs.microsoft.com/en-us/cli/azure/) or use the [cloud shell](https://azure.microsoft.com/en-us/features/cloud-shell/)
+1. Install [az-cli](https://docs.microsoft.com/en-us/cli/azure/) or use the [cloud shell](https://azure.microsoft.com/en-us/features/cloud-shell/)
+
+2. Run the following commands:
 
 ```
+az login
+az account set --subscription "<your subscription id>"
+
 git clone https://github.com/Azure/azure-quickstart-templates.git
 
 cd azure-quickstart-templates/wordpress-single-vm-ubuntu
 
 vim azuredeploy.parameters.json
 
-az group create -n resourcegroupname -l "brazilsouth"
-az group deployment create --resource-group resourcegroupname --template-file "azuredeploy.json" --parameters "azuredeploy.parameters.json" --verbose
+az group create -n <resourcegroupname> -l "brazilsouth"
+az group deployment create --resource-group <resourcegroupname> --template-file "azuredeploy.json" --parameters "azuredeploy.parameters.json" --verbose
 ```
 
+> Note: In the sample, I'm using the Brazil South location, feel free to use another region. Change <resourcegroupname> by the name of resource group that you want. When edit the file azuredeploy.parameters.json, you need choose an VmDNSName (must be unique), adminUsername, adminPassword and mySqlPasword. 
 
 
 
