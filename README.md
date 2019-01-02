@@ -16,14 +16,14 @@ Agree the terms and click to "Purchase"to start de deployment.
 
 Install [az-cli](https://docs.microsoft.com/en-us/cli/azure/) or use the [cloud shell](https://azure.microsoft.com/en-us/features/cloud-shell/)
 
-``git clone https://github.com/Azure/azure-quickstart-templates.git
+```git clone https://github.com/Azure/azure-quickstart-templates.git
 
 cd azure-quickstart-templates/wordpress-single-vm-ubuntu
 
 vim azuredeploy.parameters.json
 
 az group create -n resourcegroupname -l "brazilsouth"
-az group deployment create --resource-group resourcegroupname --template-file "azuredeploy.json" --parameters "azuredeploy.parameters.json" --verbose````
+az group deployment create --resource-group resourcegroupname --template-file "azuredeploy.json" --parameters "azuredeploy.parameters.json" --verbose```
 
 
 
