@@ -32,7 +32,7 @@ az group create -n <resourcegroupname> -l "brazilsouth"
 az group deployment create --resource-group <resourcegroupname> --template-file "azuredeploy.json" --parameters "azuredeploy.parameters.json" --verbose
 ```
 
-> Note: In the sample, I'm using the Brazil South location, feel free to use another region. Change "<resourcegroupname>" by the name of resource group that you want. When edit the file azuredeploy.parameters.json, you need choose an VmDNSName (must be unique), adminUsername, adminPassword and mySqlPasword. 
+> Note: In the sample, I'm using the Brazil South location, feel free to use another region. Change "resourcegroupname" by the name of resource group that you want. When edit the file azuredeploy.parameters.json, you need choose an VmDNSName (must be unique), adminUsername, adminPassword and mySqlPasword. 
 
 
 
