@@ -18,6 +18,8 @@ az group create --name $rg  --location $location
 # Create Redis Service
 az redis create --name $redisname --resource-group $rg --location $location --sku Standard --vm-size C1 --enable-non-ssl-port
 
+sleep 60
+
 # Get Redis Info
 az redis show --resource-group $rg --name $redisname
 az redis list-keys --resource-group $rg --name $redisname
