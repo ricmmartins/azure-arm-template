@@ -28,7 +28,7 @@ cd azure-quickstart-templates/wordpress-single-vm-ubuntu
 
 vim azuredeploy.parameters.json
 
-az group create -n <resourcegroupname> -l "brazilsouth"
+az group create -n <resourcegroupname> -l "eastus2"
 az group deployment create --resource-group <resourcegroupname> --template-file "azuredeploy.json" --parameters "azuredeploy.parameters.json" --verbose
 ```
 
