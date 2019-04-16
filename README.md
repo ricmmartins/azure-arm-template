@@ -291,7 +291,7 @@ echo "==> Setup website demo..."
 
 sudo rm /etc/nginx/sites-available/default
 
-cat <<'EOT' >> /etc/nginx/sites-available/default
+cat <<"EOT" >> /etc/nginx/sites-available/default
 # Nginx Config
    server {
     listen   80;
@@ -308,7 +308,7 @@ cat <<'EOT' >> /etc/nginx/sites-available/default
         include fastcgi_params;
     }
 }
-EOT"
+EOT
 
 
 # Build
