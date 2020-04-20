@@ -13,7 +13,6 @@
         "virtualNetworkName": "[concat(variables('virtualMachineName'),'-VNET')]",
         "publicIpAddressName": "[concat(variables('virtualMachineName'),'-PIP')]",
         "networkInterfaceName": "[concat(variables('virtualMachineName'),'-NIC')]",
-        "networkSecurityGroupName": "[concat(variables('virtualMachineName'),'-NSG')]",
         "addressPrefix": "[concat('10.0.0.0/16')]",
         "subnetName": "Servers",
         "subnetPrefix": "[concat('10.0.0.0/24')]",
@@ -39,7 +38,7 @@
                     "adminPassword": "[variables('adminPassword')]",
                     "windowsConfiguration": {
                         "provisionVmAgent": "true",
-			"enableAutomaticUpdates": "false"
+                        "enableAutomaticUpdates": "false"
                     }
                 },
                 "hardwareProfile": {
@@ -132,7 +131,6 @@
                 "name": "[variables('publicIpAddressSku')]"
             }
         }
-        
     ],
     "outputs": {}
 }
