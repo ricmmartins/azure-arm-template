@@ -140,16 +140,6 @@
             "properties": {
                 "securityRules": [
                     {
-                        "name": "default-allow-rdp",
-                        "properties": {
-                            "priority": 1000,
-                            "protocol": "TCP",
-                            "access": "Deny",
-                            "direction": "Inbound",
-                            "sourceAddressPrefix": "*",
-                            "sourcePortRange": "*",
-                            "destinationAddressPrefix": "*",
-                            "destinationPortRange": "3389"
                         }
                     }
                 ]
